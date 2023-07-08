@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dark-mode{
+  background-color:rgb(100, 98, 98);
+}
+
+.dark-mode h1{
+  color: white;
+}
+
+.container{
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+	padding-right: 15px;
+  min-height: 100vh;
+}
+
+.notes-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+
+.note.new {
+	background-color: #67d7cc;
+}
+
+
+textarea{
+  border: none;
+  resize: none;
+  background-color: #67d7cc ;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.Save{
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.Save:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.note{
+  background-color: #fef68a;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.operations{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  width: 50px;
+}
+
+.operations:hover{
+  background-color: #ededed;
+}
+
+.date{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fefdfd;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  width: 50px;
+}
+
+.Charleft{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fefdfd;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 5px 5px 5px;
+  width: 100px;
+}
+
+.delete-icon ,.pencil-icon{
+  cursor: pointer;
+}
+
+.search
+{
+  display: flex;
+  align-items: center;
+  background-color: rgb(233,233,233);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.search input{
+  border: none;
+  background-color: rgb(233,233,233);
+  padding-left: 20px;
+  width: 100%;
+}
+
+.search input:focus{
+  outline: none;
+  background-color: #fefdfd;
+  border-radius: 15px;
+}
+
+.search-icon{
+  padding-left: 10px;
+  padding-right: 10px;
+}
